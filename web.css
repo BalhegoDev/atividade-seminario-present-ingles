@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #b9b9e0;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.atividade {
+    cursor: pointer;
+}
+
+.atividade2 {
+cursor: pointer;
+}
+
+.Respostas {
+    color:  #b9b9e0;
+    margin-bottom: 20px;
+}
+
+.Respostas:hover {
+    background-color: #f0f0f0;
+    padding: 5px;
+    transition: 0.3s ease;
+}
+
+.Respostas {
+    color:  #b9b9e0;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin: 0px 300px 30px 300px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result p {
+    font-size: 1.1em;
+}
+
+.result strong {
+    font-size: 1.2em;
+    color: #4CAF50;
+}

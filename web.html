@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial Intelligence in Modern Systems</title>
+    <link rel="stylesheet" href="web.css"> 
+</head>
+<body>
+
+    <h1>Artificial Intelligence in Modern Systems</h1>
+
+    <div class="content">
+        <p>Artificial Intelligence (AI) has rapidly become a pivotal component in modern systems across various sectors, including healthcare, finance, education, and entertainment. AI refers to the simulation of human intelligence in machines that are programmed to think, learn, and perform tasks traditionally carried out by humans. These systems can analyze data, recognize patterns, and make decisions without explicit programming for every action.</p>
+
+        <p>In healthcare, AI technologies are revolutionizing diagnostics, treatment planning, and patient monitoring. AI algorithms can assist doctors in identifying diseases, suggesting personalized treatments, and even predicting patient outcomes. In finance, AI is used for algorithmic trading, fraud detection, and customer service through chatbots. The technology's ability to process vast amounts of data quickly allows for better decision-making and improved efficiency.</p>
+
+        <p>In education, AI can personalize learning experiences for students by adapting to their unique needs and progress. Furthermore, AI-powered tools can help teachers with grading, creating educational content, and providing additional support for students. Despite these advancements, AI presents several challenges, including ethical concerns related to privacy, job displacement, and decision-making transparency.</p>
+
+        <p>As AI continues to evolve, it is reshaping the landscape of modern systems, offering countless opportunities for innovation while also posing significant challenges that need careful consideration and regulation.</p>
+    </div>
+ <h2>Tempos Verbais</h2>
+    <div class="content">
+        <p>Simple Present: Usado para falar de ações habituais, fatos e verdades gerais. Exemplo: "AI is a critical part of modern healthcare systems."</p>
+
+        <p>Present Continuous: Usado para descrever ações que estão acontecendo no momento. Exemplo: "AI is revolutionizing diagnostics."</p>
+    
+        <p>Imperatives: Usados para dar instruções ou ordens. Exemplo: "Use AI to improve patient care."</p>
+        
+        <p>To Be (Simple Present): Usado para descrever estados ou qualidades. Exemplo: "AI is a transformative technology."</p>
+   </div>
+<h2> Complete as frases com o verbo "to be" no Simple Present</h2>
+<div class="atividade">
+    <p>1. AI ________ a critical part of modern healthcare systems.</p>
+    <p>2. Doctors ________ using AI to assist in diagnosing diseases.</p>
+    <br>
+    <p>(Confira as respostas passando o mouse abaixo)</p>
+
+    <div class="Respostas">
+        <p>Respostas:<br>
+        1. is<br>  
+        2. are</p>
+    </div>
+</div>
+<h3> Preencha as lacunas com o tempo verbal correto: Simple Present ou Present Continuous</h3>
+<div class="atividade2">
+    <p>AI ____ (help) doctors improve the diagnosis process.</p>
+    <p>Right now, AI ____ (transform) healthcare systems</p>
+    <br>
+    <p>(Confira as respostas passando o mouse abaixo)</p>
+
+    <div class="Respostas">
+        <p>Respostas:<br>
+        1. helps (Simple Present)<br>  
+        2. is transforming (Present Continuous)</p>
+    </div>
+</div>
+  
+   
+
+    <form id="quizForm">
+        <!-- Question 1 -->
+        <label>1. What is AI helping doctors with in healthcare?</label><br>
+        <input type="radio" name="q1" value="A"> Diagnosing diseases<br>
+        <input type="radio" name="q1" value="B"> Making coffee<br>
+        <input type="radio" name="q1" value="C"> Cooking food<br>
+
+        <br><br>
+
+        <!-- Question 2 -->
+        <label>2. Is AI replacing doctors?</label><br>
+        <input type="radio" name="q2" value="A"> Yes<br>
+        <input type="radio" name="q2" value="B"> No<br>
+
+        <br><br>
+
+        <!-- Question 3 -->
+        <label>3. Which sectors, besides healthcare, are being impacted by AI?</label><br>
+        <input type="radio" name="q3" value="A"> Only healthcare<br>
+        <input type="radio" name="q3" value="B"> Finance, education, and entertainment<br>
+        <input type="radio" name="q3" value="C"> Only education<br>
+
+        <br><br>
+
+        <!-- Question 4 -->
+        <label>4. What is one ethical concern related to AI?</label><br>
+        <input type="radio" name="q4" value="A"> Data privacy<br>
+        <input type="radio" name="q4" value="B"> AI does not have any ethical concerns<br>
+        <input type="radio" name="q4" value="C"> Free internet access<br>
+
+        <br><br>
+
+        <button type="button" class="btn" onclick="checkAnswers()">Submit</button>
+    </form>
+
+    <div id="results" class="result"></div>
+
+    <script>
+        function checkAnswers() {
+            const answers = {
+                q1: 'A',
+                q2: 'B',
+                q3: 'B',
+                q4: 'A'
+            };
+
+            let score = 0;
+            const form = document.getElementById('quizForm');
+            const resultsDiv = document.getElementById('results');
+            const formElements = form.elements;
+            let feedback = '';
+
+            // Loop through the answers
+            for (const question in answers) {
+                const selected = formElements[question].value;
+                if (selected === answers[question]) {
+                    score++;
+                    feedback += `<p>Question ${question.charAt(1)}: Correct! Your answer is right.</p>`;
+                } else {
+                    feedback += `<p>Question ${question.charAt(1)}: Incorrect. The correct answer is option ${answers[question]}</p>`;
+                }
+            }
+
+        
+            resultsDiv.innerHTML = `${feedback}<p><strong>Your score: ${score} out of 4</strong></p>`;
+        }
+    </script>
+
+</body>
+</html>
